@@ -142,11 +142,12 @@ function alternado(){
     var texto = document.getElementById("textoMan").value;
     var textoAlternado = "";
     for(let contador = 0; contador < texto.length; contador++) {
-        if(texto.charAt(contador) == texto.charAt(contador).toUpperCase()){
+        if (contador % 2 == 1) {
             textoAlternado += texto.charAt(contador).toLowerCase();
         } else {
             textoAlternado += texto.charAt(contador).toUpperCase();
         }
+        
     }
     document.getElementById("textoManipulado").innerHTML = `${textoAlternado}`;
 }
