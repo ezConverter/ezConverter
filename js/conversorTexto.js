@@ -171,7 +171,11 @@ function cabecaPraBaixo() {
     var inverso = texto.split("").reverse().join("");
     var headDown = "";
     for(let contador = 0; contador < inverso.length; contador++) {
-        headDown += listaHeadDown[inverso.charAt(contador)]
+        if (!listaHeadDown[inverso.charAt(contador)]) {
+            headDown += inverso.charAt(contador)
+        } else {
+            headDown += listaHeadDown[inverso.charAt(contador)]
+        }
     }
     document.getElementById("textoManipulado").innerHTML = `${headDown}`;
 }
