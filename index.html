@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/conversorTexto.css">
+    <title>ezConverter - Manipulando Textos</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img id="logo" src="images/ezConverterLogo.png" alt="Logo">
+    </header>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a id="manipuladorTexto" href="">Manipulador de Textos</a></li>
+            <li><a id="conversorUnidades" href="conversorUnidades.html">Conversor de Unidades</a></li>
+        </ul>
+    </nav>
+    <div class="corpoTexto">
+        <nav class="menu2">
+            <button class="botoesMenu" onclick="mudarPagina('criptografiaBinaria')" id="conversor">Conversor de Textos Para Números Binários</button>
+            <button class="botoesMenu" onclick="mudarPagina('manipularTexto')" id="manipulador">Manipular Letras de um Texto</button>
+        </nav>
+        <div id="corpoSelecionado">
+            Selecione a ferramenta que deseja usar
+            <div id="conversorBinario">
+                Esta ferramenta, irá converter seus textos em números binários rapidamente, basta digitar o texto abaixo, e clicar no botão<br>
+                Você pode utilizar também de forma contrária, lembrando que cada caractere corresponde à oito 0 ou 1, por exemplo, 01000001, que convertido é o 'A'<br>
+                <textarea id="texto" placeholder="Digite aqui o texto à ser codificado" rows="5"></textarea><br>
+                <button class="botoesConv" id="codificar" onclick="transformTextToBin()">Codificar</button>
+                <button class="botoesConv" id="copiar1" onclick="copiar('textoToBin')">Copiar</button><br>
+                <textarea id="texto2" placeholder="Digite aqui o texto à ser decodificado" rows="5"></textarea><br>
+                <button class="botoesConv" id="decodificar" onclick="transformBinToText()">Decodificar</button>
+                <button class="botoesConv" id="copiar2" onclick="copiar('textoToChar')">Copiar</button>
+            </div>
+            <div id="manipuladorTextos">
+                Digite abaixo o texto à ser manipulado e escolha algo para mudar nele!<br>
+                <textarea id="textoMan" cols="60" rows="7" placeholder="Digite aqui o texto"></textarea><br>
+                <div class="botoes">
+                    <button class="manBotoes" onclick="transMaiusculas()">1ªs Letras Maiúsculas</button>
+                    <button class="manBotoes" onclick="transMinusculas()">1ªs Letras Minúsculas</button>
+                    <button class="manBotoes" onclick="aoContrario()">Ao Contrário</button>
+                    <button class="manBotoes" onclick="alternado()">MoDo AlTeRnAdO</button>
+                    <button class="manBotoes" onclick="cabecaPraBaixo()">Cabeça para baixo</button>
+                </div>
+                <div id="textoManipulado"></div>
+                <button class="manBotoes" id="copiarMan" onclick="copiar('textoManipulado')">Copiar</button>
+            </div>
+        </div>
+        
+        <div class="textoInformacoes">
+        </div>
+    </div>
+    <footer class="rodape">
+        <div class="redesSociais">Redes Sociais</div>
+        <div class="redesSociais" id="twitter"><a href="https://twitter.com/brunildogomis" target="_blank">Twitter</a></div>
+        <div class="redesSociais" id="insta"><a href="https://www.instagram.com/brunu_gomesp/" target="_blank">Instagram</a></div>
+        <div class="doar">Apoie com</div>
+        <div class="doar" id="mercadopago"><a href="https://mpago.la/2GJCmQo" target="_blank">MercadoPago</a></div>
+    </footer>
+    <script src="js/conversorTexto.js"></script>
+</body>
+</html>

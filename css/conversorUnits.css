@@ -1,0 +1,54 @@
+#tipoUnidade {
+    background-color: cadetblue;
+    margin-top: 10px;
+    height: 30px;
+    border-color: rgb(74, 126, 128);
+    border-radius: 5px;
+}
+
+#selecionadoTipo {
+    visibility: hidden;
+}
+
+#unidSelecionada {
+    margin-top: 20px;
+    background-color: cadetblue;
+    height: 30px;
+    border-color: rgb(74, 126, 128);
+    border-radius: 5px;
+}
+
+#unidConverter {
+    margin-top: 20px;
+    background-color: cadetblue;
+    height: 30px;
+    border-color: rgb(74, 126, 128);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+#primeiroNumero {
+    margin-top: 10px;
+    height: 20px;
+    border: 1px solid rgb(74, 126, 128);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#numeroCalculado {
+    margin-top: 10px;
+    padding-left: 3px;
+    display: none;
+    width: 300px;
+    height: 20px;
+    border: 1px solid rgb(74, 126, 128);
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+#botaoConverter {
+    margin-top: 20px;
+    background-color: cadetblue;
+    border-color: rgb(74, 126, 128);
+    border-radius: 5px;
+}

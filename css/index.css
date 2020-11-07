@@ -1,0 +1,179 @@
+body {
+    width: 100%;
+}
+
+.cabecalho {
+    margin-top: -10px;
+    margin-left: -10px;
+    height: 100px;
+    background-color: cadetblue;
+}
+
+#logo {
+    margin-left: 60px;
+    width: 150px;
+}
+
+.menu {
+    margin-left: -8px;
+    margin-top: -20px;
+    height: 26px;
+    background-color: cadetblue;
+    border-bottom: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu ul li {
+    width: 200px;
+    float: left;
+}
+
+.menu a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    color: black;
+    background-color: rgb(84, 139, 141);
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for="bt_menu"] {
+    display: none;
+    padding: 4px;
+    margin-top: -1px;
+    margin-left: -8px;
+    width: 100%;
+    background-color: cadetblue;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+
+.corpoTexto {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    height: 450px;
+    width: 70%;
+    padding: 30px 15px;
+    margin-left: 13%;
+    font-family: cursive;
+    font-size: 14px;
+
+}
+
+.rodape {
+    background-color: cadetblue;
+    width: 100.6%;
+    margin-left: -8px;
+    position: absolute;
+    display: grid;
+    font-size: 17px;
+    align-items: center;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 14px;
+}
+
+.redesSociais {
+    grid-column: 1;
+}
+
+#twitter a{
+    text-decoration: underline;
+    color: black;
+}
+
+#insta a {
+    text-decoration: underline;
+    color: black;
+}
+
+.doar {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#mercadopago {
+    grid-row: 2;
+}
+
+#mercadopago a{
+    text-decoration: underline;
+    color: black;
+}
+
+
+@media (max-width: 900px) {
+    .cabecalho {
+        margin-top: -10px;
+        margin-left: -10px;
+        height: 100px;
+        background-color: cadetblue;
+    }
+
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+    }
+
+    .menu {
+        display: none;
+        height: 50px;
+    }
+    .menu ul li {
+        margin-left: -15px;
+        width: 100%;
+        float: none;
+    }
+    
+    .rodape {
+        display: none;
+    }
+
+    #bt_menu {
+        display: none;
+    }
+
+    label[for="bt_menu"] {
+        display: block;
+    }
+
+    #bt_menu:checked ~ .menu {
+        display: block;
+    }
+
+    .corpoTexto {
+        border-left: 0px;
+        border-right: 0px;
+        height: 450px;
+        width: 70%;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 14px;
+    }
+}

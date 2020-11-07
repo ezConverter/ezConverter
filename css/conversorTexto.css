@@ -1,0 +1,125 @@
+.corpoTexto {
+    text-align: center;
+}
+
+.menu2{
+    margin-left: 10px;
+}
+
+.botoesMenu {
+    background-color:  cadetblue;
+    outline: none;
+    border: 1px solid rgb(84, 139, 141);
+    cursor: pointer;
+    margin-left: -5px;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+.botoesMenu:hover {
+    background-color:  rgb(84, 139, 141);
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+#corpoSelecionado {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.botoesConv {
+    background-color: cadetblue;
+    border: 1px solid;
+    border-color: rgb(84, 139, 141);
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px rgb(58, 96, 97);
+}
+
+.botoesConv:hover {
+    background-color: rgb(84, 139, 141);
+}
+
+.botoesConv:active {
+    background-color:  rgb(84, 139, 141);
+    box-shadow: 0 3px rgb(58, 96, 97);
+    transform: translateY(2px);
+}
+
+#texto {
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    resize: none;
+    width: 85%;
+    font-family: cursive;
+}
+
+#texto2{
+    margin-top: 15px;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    resize: none;
+    font-family: cursive;
+    width: 85%;
+}
+
+.manBotoes {
+    background-color:  cadetblue;
+    width: 140px;
+    outline: none;
+    border: 1px solid rgb(84, 139, 141);
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px 5px;
+}
+
+.manBotoes:hover {
+    background-color:  rgb(84, 139, 141);
+    outline: none;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+#conversorBinario {
+    display: none;
+}
+
+#manipuladorTextos {
+    display: none;
+}
+
+#textoMan {
+    margin-top: 5px;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    width: 90%;
+    resize: none;
+    font-family: cursive;
+}
+
+#textoManipulado {
+    margin-top: 10px;
+    margin-left: 5%;
+    padding: 5px 0px;
+    width: 90%;
+    border: 1px solid cadetblue;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    font-family: cursive;
+}
+
+.textoInformacoes {
+    margin-top: 10px;
+    font-family: cursive;
+}
