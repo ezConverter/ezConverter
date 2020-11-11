@@ -123,6 +123,10 @@ label[for="bt_menu"] {
     color: black;
 }
 
+.ad {
+    margin-top: -200px;
+}
+
 
 @media (max-width: 900px) {
     .cabecalho {
