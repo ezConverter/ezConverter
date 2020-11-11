@@ -71,14 +71,16 @@ label[for="bt_menu"] {
 
 .adetexto {
     display: flex;
+    flex-direction: column;
 }
 
 .corpoTexto {
     border-left: 2px solid black;
     border-right: 2px solid black;
-    height: 450px;
+    height: 700px;
     width: 70%;
     padding: 30px 15px;
+    margin-left: 13%;
     font-family: cursive;
     font-size: 14px;
 
@@ -179,7 +181,4 @@ label[for="bt_menu"] {
         font-size: 14px;
     }
 
-    .ad {
-        align-self: center;
-    }
 }
