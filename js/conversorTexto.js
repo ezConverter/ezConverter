@@ -67,13 +67,17 @@ function transformBinToText() {
     let textoACrip = document.getElementById("texto2").value;
     document.getElementById("texto").value = ``;
     numeroBin = textoACrip.split(" ");
-    numeroBin.pop();
-    if (numeroBin.indexOf(" ")) {
-        for(let contador2 = 0; contador2 < numeroBin.length; contador2++) {
-            let indexOf = bin.indexOf(numeroBin[contador2]);
-            let letra = String.fromCharCode(indexOf + 32);
-            document.getElementById("texto").value += `${letra}`; 
-        }
+    contador2 = 0;
+    for(let contador = 0; contador < numeroBin.length; contador++) {
+        contador2++;
+    }
+    if (numeroBin.indexOf("") > -1) {
+        numeroBin.splice(numeroBin.indexOf(""), contador2);
+    }
+    for(let contador2 = 0; contador2 < numeroBin.length; contador2++) {
+        let indexOf = bin.indexOf(numeroBin[contador2]);
+        let letra = String.fromCharCode(indexOf + 32);
+        document.getElementById("texto").value += `${letra}`; 
     }
 }
 
