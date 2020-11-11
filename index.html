@@ -15,10 +15,16 @@
     <label for="bt_menu">&#9776;</label>
     <nav class="menu">
         <ul>
-            <li><a id="manipuladorTexto" href="">Manipulador de Textos</a></li>
+            <li><a id="manipuladorTexto" href="" id="home" style="background-color: rgb(84, 139, 141)">Manipulador de Textos</a></li>
             <li><a id="conversorUnidades" href="conversorUnidades.html">Conversor de Unidades</a></li>
         </ul>
     </nav>
+    <div class="adetexto">
+        <div class="ad">
+        <script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=554942&format=300x50&ga=g&mbtodb=1"></script>
+        <noscript><a href="https://yllix.com/publishers/554942" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_zn9ugf.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>
+    </div>
+    
     <div class="corpoTexto">
         <nav class="menu2">
             <button class="botoesMenu" onclick="mudarPagina('criptografiaBinaria')" id="conversor">Conversor de Textos Para Números Binários</button>
@@ -36,27 +42,23 @@
                 <button class="botoesConv" id="decodificar" onclick="transformBinToText()">Decodificar</button>
                 <button class="botoesConv" id="copiar2" onclick="copiar('textoToChar')">Copiar</button>
             </div>
-            <div id="manipuladorTextos">
-                Digite abaixo o texto à ser manipulado e escolha algo para mudar nele!<br>
-                <textarea id="textoMan" cols="60" rows="7" placeholder="Digite aqui o texto"></textarea><br>
-                <div class="botoes">
-                    <button class="manBotoes" onclick="transMaiusculas()">1ªs Letras Maiúsculas</button>
-                    <button class="manBotoes" onclick="transMinusculas()">1ªs Letras Minúsculas</button>
-                    <button class="manBotoes" onclick="aoContrario()">Ao Contrário</button>
-                    <button class="manBotoes" onclick="alternado()">MoDo AlTeRnAdO</button>
-                    <button class="manBotoes" onclick="cabecaPraBaixo()">Cabeça para baixo</button>
+                <div id="manipuladorTextos">
+                    Digite abaixo o texto à ser manipulado e escolha algo para mudar nele!<br>
+                    <textarea id="textoMan" cols="60" rows="7" placeholder="Digite aqui o texto"></textarea><br>
+                    <div class="botoes">
+                        <button class="manBotoes" onclick="transMaiusculas()">1ªs Letras Maiúsculas</button>
+                        <button class="manBotoes" onclick="transMinusculas()">1ªs Letras Minúsculas</button>
+                        <button class="manBotoes" onclick="aoContrario()">Ao Contrário</button>
+                        <button class="manBotoes" onclick="alternado()">MoDo AlTeRnAdO</button>
+                        <button class="manBotoes" onclick="cabecaPraBaixo()">Cabeça para baixo</button>
+                    </div>
+                    <div id="textoManipulado"></div>
+                    <button class="manBotoes" id="copiarMan" onclick="copiar('textoManipulado')">Copiar</button>
                 </div>
-                <div id="textoManipulado"></div>
-                <button class="manBotoes" id="copiarMan" onclick="copiar('textoManipulado')">Copiar</button>
+            </div>
+            <div class="textoInformacoes">
             </div>
         </div>
-        
-        <div class="textoInformacoes">
-        </div>
-    </div>
-    <div class="ad">
-        <script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=554942&format=300x50&ga=g&mbtodb=1"></script>
-        <noscript><a href="https://yllix.com/publishers/554942" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_zn9ugf.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>
     </div>
     <footer class="rodape">
         <div class="redesSociais">Redes Sociais</div>

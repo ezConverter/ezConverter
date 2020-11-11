@@ -69,13 +69,16 @@ label[for="bt_menu"] {
     border-bottom: 2px solid black;
 }
 
+.adetexto {
+    display: flex;
+}
+
 .corpoTexto {
     border-left: 2px solid black;
     border-right: 2px solid black;
     height: 450px;
     width: 70%;
     padding: 30px 15px;
-    margin-left: 13%;
     font-family: cursive;
     font-size: 14px;
 
@@ -122,11 +125,6 @@ label[for="bt_menu"] {
     text-decoration: underline;
     color: black;
 }
-
-.ad {
-    margin-top: -200px;
-}
-
 
 @media (max-width: 900px) {
     .cabecalho {
@@ -179,5 +177,9 @@ label[for="bt_menu"] {
         margin-right: auto;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 14px;
+    }
+
+    .ad {
+        align-self: center;
     }
 }

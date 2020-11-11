@@ -16,37 +16,39 @@
     <nav class="menu">
         <ul>
             <li><a id="manipuladorTexto" href="index.html">Manipulador de Textos</a></li>
-            <li><a id="conversorUnidades" href="">Conversor de Unidades</a></li>
+            <li><a id="conversorUnidades" href="" style="background-color: rgb(84, 139, 141)">Conversor de Unidades</a></li>
         </ul>
     </nav>
-    <div class="corpoTexto">
-        Selecione o tipo de unidade:<br>
-        <select id="tipoUnidade" onchange="unidade1()">
-            <option value="none"></option>
-            <option value="comprimento">Comprimento</option>
-            <option value="temperatura">Temperatura</option>
-            <option value="massa">Massa</option>
-            <option value="volume">Volume</option>
-            <option value="bytes">Múltiplos de Bytes</option>
-            <option value="bits">Múltiplos de Bits</option>
-        </select><br>
-        <div id="selecionadoTipo">
-            Agora, Escolha a unidade de medida que você quer converter e para qual.<br>
-            Logo após, apenas digite o número à ser convertido.<br>
-            <select id="unidSelecionada" onchange="unidade2()">
-
-            </select><br>
-            <input type="number" min="0" id="primeiroNumero" onchange="converterNumero()">
-            <button id="botaoConverter" onclick="converterNumero()">Converter</button><br>
-            <select id="unidConverter" onchange="converterNumero()">
-
-            </select><br>
-            <div id="numeroCalculado">0</div>
+    <div class="adetexto">
+        <div class="ad">
+            <script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=554942&format=300x50&ga=g&mbtodb=1"></script>
+            <noscript><a href="https://yllix.com/publishers/554942" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_zn9ugf.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>
         </div>
-    </div>
-    <div class="ad">
-        <script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=554942&format=300x50&ga=g&mbtodb=1"></script>
-        <noscript><a href="https://yllix.com/publishers/554942" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_zn9ugf.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>
+        <div class="corpoTexto">
+            Selecione o tipo de unidade:<br>
+            <select id="tipoUnidade" onchange="unidade1()">
+                <option value="none"></option>
+                <option value="comprimento">Comprimento</option>
+                <option value="temperatura">Temperatura</option>
+                <option value="massa">Massa</option>
+                <option value="volume">Volume</option>
+                <option value="bytes">Múltiplos de Bytes</option>
+                <option value="bits">Múltiplos de Bits</option>
+            </select><br>
+            <div id="selecionadoTipo">
+                Agora, Escolha a unidade de medida que você quer converter e para qual.<br>
+                Logo após, apenas digite o número à ser convertido.<br>
+                <select id="unidSelecionada" onchange="unidade2()">
+
+                </select><br>
+                <input type="number" min="0" id="primeiroNumero" onchange="converterNumero()">
+                <button id="botaoConverter" onclick="converterNumero()">Converter</button><br>
+                <select id="unidConverter" onchange="converterNumero()">
+
+                </select><br>
+                <div id="numeroCalculado">0</div>
+            </div>
+        </div>
     </div>
     <footer class="rodape">
         <div class="redesSociais">Redes Sociais</div>

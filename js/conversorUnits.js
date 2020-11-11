@@ -1,6 +1,3 @@
-// Mudar a cor no cabeçalho (menu)
-document.getElementById("conversorUnidades").style.backgroundColor = "rgb(82, 139, 141)";
-
 let tiposUnitsList = document.getElementById("tipoUnidade");
 let tiposEunidades = {};
 tiposEunidades['comprimento'] = ['Selecione aqui', 'Metros', 'Milimetros', 'Centímetros', 'Quilômetros', 'Léguas', 'Milhas', 'Pés', 'Polegadas'];
